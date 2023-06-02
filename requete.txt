@@ -1,0 +1,37 @@
+requete: getPublication.php for $get[identifiantUser]
+
+"SELECT 
+    p.*, 
+    (SELECT JSON_ARRAYAGG(JSON_OBJECT('id', u.id, 'nom', u.nom, 'prenom', u.prenom)) 
+     FROM users u 
+     WHERE FIND_IN_SET(u.token, p.identifierPersonne)
+    ) AS identifiedUsers,
+    c.commentaires,
+    l.likedUsers
+FROM 
+    publications p 
+    LEFT JOIN (
+        SELECT 
+            id_publication, 
+            JSON_ARRAYAGG(
+                JSON_OBJECT('id', l.id_utilisateur)
+            ) AS likedUsers 
+        FROM likes l 
+        GROUP BY id_publication
+    ) AS l ON p.id = l.id_publication
+    LEFT JOIN (
+        SELECT 
+            id_publication, 
+            JSON_ARRAYAGG(
+                JSON_OBJECT('id_commentaire', c.id, 'contenu_commentaire', c.contenu, 'id_utilisateur', c.id_utilisateur)
+            ) AS commentaires
+        FROM commentaires c 
+        GROUP BY id_publication
+    ) AS c ON p.id = c.id_publication
+WHERE 
+    p.idUser = (:idUser) 
+    OR p.identifiantUser IN (
+      SELECT fromUser FROM notifications WHERE fromUser = (:fromUser) OR toUser = (:toUser) AND type = 'accept-friend'
+    ) 
+ORDER BY p.id DESC
+"

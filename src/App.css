@@ -1,0 +1,116 @@
+*{
+  margin:0;
+  padding:0;
+
+
+}
+
+
+::-moz-placeholder {
+  color:#a1a3a7;
+}
+
+::-ms-placeholder {
+  color:#a1a3a7;
+}
+
+::placeholder {
+  color:#a1a3a7;
+}
+
+
+textarea::-webkit-input-placeholder {
+  color: black;
+}
+textarea:-moz-placeholder { /* Upto Firefox 18, Deprecated in Firefox 19  */
+  color: black;  
+}
+textarea::-moz-placeholder {  /* Firefox 19+ */
+  color: black;  
+}
+textarea:-ms-input-placeholder {  
+  color: black;  
+}
+
+.spanUnique {
+  font-weight: none!important;
+}
+
+#textColor{
+  outline: none;
+}
+
+.inputColor {
+  color: transparent;
+}
+
+.inputColor span {
+  color: black;
+}
+
+textarea{
+  resize: none;
+}
+
+textarea::placeholder{
+  font-size: 13.5px;
+}
+
+input:focus,textarea:focus{
+  outline: none;
+}
+
+.rond{
+  width: 4.5px;
+  height: 4.5px;
+  background-color: rgba(0,0,0,0.25);
+  border-radius: 100%;
+}
+
+.rond1{
+  animation: test 0.5s linear infinite alternate
+}
+
+.rond2{
+  animation: test 0.5s linear infinite alternate;
+  animation-delay: 0.2s;
+}
+
+.rond3{
+  animation: test 0.5s linear infinite alternate;
+  animation-delay: 0.4s;
+}
+
+@keyframes test {
+  from{
+    transform: translateY(0)
+  }
+  to{
+    transform: translateY(-4px)
+  }
+}
+
+.blocInput{
+  animation: testz 0.1s linear forwards alternate;
+  transform-origin: left!important;
+
+}
+
+@keyframes testz {
+  from {
+    width: 40%;
+    margin-left: 40%; /* Déplacer le bloc complètement hors de la vue à gauche */
+    transform-origin: top right; /* Point d'origine à droite */
+  }
+  to {
+    width: 78.5%;
+    margin-left: 0; /* Revenir à la position de départ */
+    transform-origin: top right; /* Point d'origine à droite */
+  }
+}
+
+
+.blocSvg{
+  display: none
+ };
+
