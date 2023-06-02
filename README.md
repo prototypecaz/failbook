@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# Projet Facebook
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Ce projet est une application web développée en utilisant ReactJS pour la partie front-end, PHP pour la partie back-end, et Socket.IO pour la fonctionnalité de chat en temps réel. L'objectif principal de ce projet était de m'entraîner à travailler avec ReactJS, car je n'avais jamais utilisé ce framework auparavant.
 
-## Available Scripts
+## Fonctionnalités
 
-In the project directory, you can run:
+- Connexion et inscription des utilisateurs
+- Fil d'actualités affichant les publications des utilisateurs
+- Possibilité de publier des messages
+- Ajouter des amis
+- Afficher le profil des utilisateurs
+- Possibilité de trouver des utilisateurs dans la barre de recherche
+- Système de chat en temps réel utilisant Socket.IO
+- Interaction avec les publications (likes, commentaires, etc.) en  temps réel
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Clonez ce dépôt sur votre machine locale.
+2. Assurez-vous d'avoir Node.js et npm installés.
+3. Accédez au répertoire du projet via la ligne de commande.
+4. Installez les dépendances en exécutant la commande suivante :
+```bash
+  npm install 
+```
+5. En étant à la racine du projet. Lancez l'application front-end en exécutant la commande suivante :
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```bash
+  npm start
+```
+L'application sera exécutée sur le port 3000.
 
-### `npm test`
+6. Tout en étant a la racine du projet. Lancez le serveur Socket.IO en exécutant la commande suivante :
+```bash
+  cd back-end
+  npm start
+```
+Le serveur sera exécuté sur le port 4000.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+7. En restant à la racine du dossier back-end. Lancez le serveur PHP en exécutant la commande suivante :
+```bash
+  php -S localhost:8000
+```
+Le serveur PHP sera exécuté sur le port 8000.
 
-### `npm run build`
+8. Assurez-vous d'avoir une base de données MySQL configurée. Vous pouvez importer le schéma de base de données à partir du fichier `failbook.sql` fourni.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+9. Assurez-vous de mettre à jour les informations de connexion à la base de données dans le fichier de configuration PHP.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Auteurs
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Guillaume Cazes
 
-### `npm run eject`
+N'hésitez pas à me contacter si vous avez des questions ou des commentaires.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
