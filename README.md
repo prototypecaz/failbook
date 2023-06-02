@@ -6,7 +6,7 @@ Ce projet est une application web développée en utilisant ReactJS pour la part
 
 - Connexion et inscription des utilisateurs
 - Fil d'actualités affichant les publications des utilisateurs
-- Possibilité de publier des messages
+- Possibilité de publier des messages, des photos...
 - Ajouter des amis
 - Afficher le profil des utilisateurs
 - Possibilité de trouver des utilisateurs dans la barre de recherche
