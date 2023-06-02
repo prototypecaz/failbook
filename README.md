@@ -44,7 +44,7 @@ Le serveur PHP sera exécuté sur le port 8000.
 
 8. Assurez-vous d'avoir une base de données MySQL configurée. Vous pouvez importer le schéma de base de données à partir du fichier `failbook.sql` fourni.
 
-9. Assurez-vous de mettre à jour les informations de connexion à la base de données dans le fichier de configuration PHP.
+9. Assurez-vous de mettre à jour les informations de connexion à la base de données dans le fichier de configuration PHP et dans le fichier server.js
 
 ## Auteurs
 
