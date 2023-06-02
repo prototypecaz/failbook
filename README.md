@@ -1,6 +1,6 @@
 # Projet Facebook
 
-Ce projet est une application web développée en utilisant ReactJS pour la partie front-end, PHP pour la partie back-end, et Socket.IO pour la fonctionnalité de chat en temps réel. L'objectif principal de ce projet était de m'entraîner à travailler avec ReactJS, car je n'avais jamais utilisé ce framework auparavant.
+Ce projet est une application web développée en utilisant ReactJS pour la partie front-end, PHP pour la partie back-end, et Socket.IO pour la fonctionnalité en temps réel. 
 
 ## Fonctionnalités
 
