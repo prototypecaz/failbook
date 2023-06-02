@@ -12,6 +12,7 @@ Ce projet est une application web développée en utilisant ReactJS pour la part
 - Possibilité de trouver des utilisateurs dans la barre de recherche
 - Système de chat en temps réel utilisant Socket.IO
 - Interaction avec les publications (likes, commentaires, etc.) en  temps réel
+- Système de notification
 
 ## Installation
 
